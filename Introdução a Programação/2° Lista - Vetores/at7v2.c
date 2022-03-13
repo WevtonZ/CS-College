@@ -13,7 +13,7 @@ int main(void)
     {
         scanf("%d", &n);
 
-        if(n==0) return 0;
+        if(n==0) break;
        
         hhest = -1;
         counter = 0;
