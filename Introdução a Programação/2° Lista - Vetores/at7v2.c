@@ -7,7 +7,7 @@ int main(void)
     int n, counter; // Tamanho do Vetor e contador do vetor.
     int vet[MAX] = {0}; // Vetor de numeros.
     int hhest; // Maior numero contido no vetor.
-    int i, j, k; // Variaveis contadoras.
+    int i, j; // Variaveis contadoras.
     
     while(1)
     {
