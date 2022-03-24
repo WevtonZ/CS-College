@@ -4,12 +4,9 @@
 
 int main(void)
 {
-    char str[5000];
-    char pLang[1000];
+    char str[1005];
     char c;
-    int n;
-    int i, k;
-    int ccon = 0;
+    int n, i, k;
     int lng;
 
     scanf("%d", &n);
@@ -19,28 +16,8 @@ int main(void)
         getchar();
         scanf("%[^\n]", str);
 
-        for(i=0 ; i<lng ; i++)
-        {
-            c = str[i];
-            if(isalpha(c))
-            {
-                switch (c)
-                {
-                case 'a':
-                case 'e':
-                case 'i':
-                case 'o':
-                case 'u':    
-                    break;
-                
-                default:
-                    ccon++;
-                }
-            }
-        }
-
-        lng = strlen(str) + ccon + 2;
-
+        lng = strlen(str);
+      
         for(i=lng ; i>=0 ; i--)
         {
             c = str[i];
@@ -56,7 +33,7 @@ int main(void)
                     break;
                 
                 default:
-                    for(k=4998 ; k>=i ; k--)
+                    for(k=1003 ; k>=i ; k--)
                     {
                         str[k+1] = str[k];
                     }
