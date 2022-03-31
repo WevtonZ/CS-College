@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define MAX_ 60
+
 typedef struct Polinomios
 {
-    double coef[55]; // Coeficiente.
+    double coef[MAX_]; // Coeficiente.
 } poli;
-
 
 void poliSum(void);
 void poliSub(void);
@@ -37,7 +38,7 @@ void poliSum(void)
     double coef;
     poli v1[5];
 
-    for(i=0 ; i<80 ; i++)
+    for(i=0 ; i<MAX_ ; i++)
     {
         v1[0].coef[i] = 0;
         v1[1].coef[i] = 0;
@@ -59,12 +60,12 @@ void poliSum(void)
         v1[1].coef[exp] = coef;
     }
 
-    for(i=0 ; i<55 ; i++)
+    for(i=0 ; i<MAX_ ; i++)
     {
         v1[2].coef[i] = v1[0].coef[i] + v1[1].coef[i];
     }
 
-    for(i=54 ; i>=0 ; i--)
+    for(i=MAX_-1 ; i>=0 ; i--)
     {
         if(v1[2].coef[i] != 0)
         {
@@ -98,7 +99,7 @@ void poliSub()
     double coef;
     poli v1[5];
 
-    for(i=0 ; i<80 ; i++)
+    for(i=0 ; i<MAX_ ; i++)
     {
         v1[0].coef[i] = 0;
         v1[1].coef[i] = 0;
@@ -120,12 +121,12 @@ void poliSub()
         v1[1].coef[exp] = coef;
     }
 
-    for(i=0 ; i<55 ; i++)
+    for(i=0 ; i<MAX_ ; i++)
     {
         v1[2].coef[i] = v1[0].coef[i] - v1[1].coef[i];
     }
 
-    for(i=54 ; i>=0 ; i--)
+    for(i=MAX_-1 ; i>=0 ; i--)
     {
         if(v1[2].coef[i] != 0)
         {
