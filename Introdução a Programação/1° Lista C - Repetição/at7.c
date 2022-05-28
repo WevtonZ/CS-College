@@ -48,7 +48,7 @@ int main(void)
 
         printf("Matricula: %d, ", mat);
         printf("Nota Final: %.2lf, ", nf);
-        printf("Situacao Final: ");
+        printf("Situacao final: ");
 
         if(nf>=6 && presence>=96)
         {

@@ -25,7 +25,7 @@ int main(void)
         else c = 1;
         ant = nmb;
     }
-    printf("O comprimento do segmento crescente maximo e: %d\n", max-1);
+    printf("O comprimento do segmento crescente maximo e: %d\n", max);
 
     return 0;
 }

@@ -22,7 +22,7 @@ int main(void)
 
 void inverte(int *x, int *y)
 {
-    int a, b, c;
+    int a, b, c, arm, arm2;
 
     a = *x/100;
     b = *x%100/10;

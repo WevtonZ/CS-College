@@ -15,7 +15,7 @@ int main(void)
 
         fee = H_Num * H_Val;
 
-        printf("%d %.2lf\n", mat, fee);
+        printf("%d %d %.2lf\n", mat, H_Num, fee);
     }
 
     return 0;
