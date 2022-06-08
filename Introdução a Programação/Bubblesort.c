@@ -1,4 +1,4 @@
-void order(est *vet, int nCases)
+void order(int *vet, int nCases)
 {
     int i, j;
     
@@ -6,7 +6,7 @@ void order(est *vet, int nCases)
     {
         for(j=i+1 ; j<nCases ; j++)
         {
-            if(vet[i].morCons > vet[j].morCons)
+            if(vet[i] > vet[j])
             {
                 trade(&vet[i], &vet[j]);
             }
@@ -14,9 +14,9 @@ void order(est *vet, int nCases)
     }
 }
     
-void trade(est* x, est* y)
+void trade(int* x, int* y)
 {
-    est temp;
+    int temp;
     
     temp = *x;
     *x = *y;
