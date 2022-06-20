@@ -1,3 +1,3 @@
-Hello!
+Olá!
 
-My name is Wevton and this is the repository where I save things from my college. I'm also Brazilian, so you will see that almost all, if not all things here are written in Portuguese.
+Meu nome é Wevton Junior, estudante do curso de Ciências da Computação pela Universidade Federal de Goiás. Este é meu repositório da faculdade e, conforme eu avanço, mais coisas serão colocadas aqui.
