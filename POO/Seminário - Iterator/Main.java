@@ -1,9 +1,8 @@
 // Uso da interface meuIterator.
-// Criar usando o Iterable do Java.
 
 public class Main {
     public static void main(String[] args) {
-        MyList<Integer> a = new MyList<Integer>();
+        MyList<Integer> a = new MyList<>();
         a.add(10);
         a.add(20);
         a.add(15);
